@@ -7,7 +7,6 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [react()],
-    // Dynamically sets base path: uses repo name for GitHub Actions, root for Vercel
-    base: env.GITHUB_ACTIONS ? '/angel-benitez-portfolio/' : '/',
+    base: './',
   }
 })
