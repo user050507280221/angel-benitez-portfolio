@@ -1,0 +1,106 @@
+.skills {
+  padding: 110px 0;
+  background: var(--bg-primary);
+}
+
+.skills__orb {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(0,212,255,0.07), transparent 70%);
+  top: 50%; right: -80px;
+  transform: translateY(-50%);
+}
+
+.skills__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.skills__title-accent {
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skills__subtitle {
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin: 14px auto 0;
+  font-size: 1rem;
+}
+
+/* Categories */
+.skills__categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.skills__category-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: var(--transition);
+}
+
+.skills__category-block:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+}
+
+.skills__cat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skills__cat-icon {
+  font-size: 1.4rem;
+}
+
+.skills__cat-label {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.skills__cat-count {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.skill-tag:hover {
+  transform: scale(1.04);
+  filter: brightness(1.15);
+}
+
+@media (max-width: 820px) {
+  .skills__categories { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 541px) and (max-width: 820px) {
+  .skills__categories { grid-template-columns: repeat(2, 1fr); }
+}
