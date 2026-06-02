@@ -102,6 +102,54 @@ export const experience = [
   },
 ];
 
+export const projects = [
+  {
+    id: 1,
+    title: "Dorm Tenant Management System",
+    description: "A comprehensive system designed to streamline tenant tracking, room allocation, and billing management for property administrators.",
+    category: "GitHub",
+    tags: ["React", "UI/UX Prototyping", "System Analysis"],
+    link: "https://github.com/user050507280221/dorm-tenant-management", // Update with your actual URL if needed
+    featured: true
+  },
+  {
+    id: 2,
+    title: "Commercial Property Leasing Hub",
+    description: "A commercial leasing application managing real estate property tracking and automated deployment configurations.",
+    category: "GitHub",
+    tags: ["React", "Git", "Cloud Deployment"],
+    link: "https://github.com/user050507280221/Commercial-Property-Leasing-Hub",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "GCR Campus Event Brand Assets",
+    description: "Complete visual identity layouts, digital assets, and promotional materials designed for major campus events and student programming.",
+    category: "Canva",
+    tags: ["Graphic Designer", "Branding", "Canva Layouts"],
+    link: "https://www.canva.com/your-design-link", // Replace with your Canva share link or portfolio view link
+    featured: true
+  },
+  {
+    id: 4,
+    title: "Land of Dawn - MLBB Tournament Graphics",
+    description: "Gaming tournament branding concept featuring customized hero assets and marketing materials for the College of Computer Studies.",
+    category: "Canva",
+    tags: ["Canva", "Poster Design", "Gaming Identity"],
+    link: "https://www.canva.com/your-design-link", // Replace with your Canva link
+    featured: false
+  },
+  {
+    id: 5,
+    title: "Research Colloquium Opening Visuals",
+    description: "Designed screen background themes and main stage digital backdrops engineered for the 2026 Capstone Project Research Colloquium.",
+    category: "Canva",
+    tags: ["Visual Design", "Event Production", "Presentation"],
+    link: "https://www.canva.com/your-design-link", // Replace with your Canva link
+    featured: false
+  }
+];
+
 export const references = [
   {
     name: "Quiniquito, Angela Marie",
