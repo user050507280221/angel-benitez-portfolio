@@ -1,0 +1,92 @@
+/* Import this AFTER index.css in main.jsx:  import './polish.css' */
+
+/* ─── ACCESSIBILITY BASELINE ──────────────────────────── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  body.cursor-none { cursor: auto; }
+  .custom-cursor__dot, .custom-cursor__ring { display: none; }
+}
+
+/* ─── CARD MICRO-INTERACTIONS ─────────────────────────── */
+/* Add data-tilt to any card element and pair with the useTilt hook
+   (see useTilt.js) for a subtle pointer-following 3D tilt. */
+[data-tilt] {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.15s ease-out;
+}
+
+/* Sheen sweep on hover — layer onto service-card / project__card */
+.service-card,
+.project__card {
+  position: relative;
+}
+
+.service-card::after,
+.project__card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.06) 50%,
+    transparent 70%
+  );
+  background-size: 200% 200%;
+  background-position: 200% 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.service-card:hover::after,
+.project__card:hover::after {
+  opacity: 1;
+  animation: sheen-sweep 1s ease forwards;
+}
+
+@keyframes sheen-sweep {
+  from { background-position: 200% 0; }
+  to   { background-position: -50% 0; }
+}
+
+/* Magnetic nudge for primary CTAs — pair with useMagnetic hook */
+.btn-primary[data-magnetic],
+.btn-outline[data-magnetic] {
+  transition: transform 0.2s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* Nav link underline grows from center instead of popping in */
+.navbar__link {
+  overflow: hidden;
+}
+.navbar__link::before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background: var(--accent);
+  transition: width 0.25s ease, left 0.25s ease;
+}
+.navbar__link:hover::before {
+  width: calc(100% - 28px);
+  left: 14px;
+}

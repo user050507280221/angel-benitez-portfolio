@@ -18,8 +18,9 @@ export default function Footer() {
         </div>
 
         <div className="footer__links">
-          {['#hero','#about','#services','#experience','#skills','#contact'].map((href, i) => {
-            const labels = ['Home','About','Services','Experience','Skills','Contact'];
+          {/* 👑 Added '#projects' and 'Projects' to both tracking arrays below */}
+          {['#hero','#about','#services','#experience', '#projects', '#skills','#contact'].map((href, i) => {
+            const labels = ['Home','About','Services','Experience', 'Projects', 'Skills','Contact'];
             return (
               <a key={href} href={href} className="footer__link">{labels[i]}</a>
             );

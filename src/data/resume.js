@@ -77,9 +77,9 @@ export const experience = [
     company: "Global Reciprocal Colleges (GRC) / First Abiko Sanctuary Missionary Baptist Church",
     period: "2026 – Present",
     bullets: [
-     "Conceptualize and design official digital posters, announcements, and pubmats for the church's official Facebook page.",
-    "Maintain a consistent and engaging visual identity across all online community announcements.",
-    "Manage digital assets and schedules for social media postings to effectively reach community members."
+      "Conceptualize and design official digital posters, announcements, and pubmats for the church's official Facebook page.",
+      "Maintain a consistent and engaging visual identity across all online community announcements.",
+      "Manage digital assets and schedules for social media postings to effectively reach community members."
     ],
   },
   {
@@ -102,52 +102,49 @@ export const experience = [
   },
 ];
 
+// 👑 Added missing export wrapper below to structure your portfolio projects correctly
 export const projects = [
+{
+    title: "Directory of Missionary Baptist Missions and Churches in the Philippines",
+    description:
+      "My first client experience project. I redesigned the frontend layout based on the existing ABA (American Baptist Association) website design, building it with clean structure and custom layout styling.",
+    tags: [
+      { label: "HTML5",          category: "technical" },
+      { label: "CSS3 Custom",     category: "technical" },
+      { label: "JavaScript",     category: "technical" },
+      { label: "Web Redesign",    category: "creative"  },
+      { label: "Client Project",  category: "creative"  },
+    ],
+    link: "https://github.com/user050507280221/church_site",
+    type: "github",
+  },
   {
-    id: 1,
     title: "Dorm Tenant Management System",
-    description: "A comprehensive system designed to streamline tenant tracking, room allocation, and billing management for property administrators.",
-    category: "GitHub",
-    tags: ["React", "UI/UX Prototyping", "System Analysis"],
-    link: "https://github.com/user050507280221/dorm-tenant-management", // Update with your actual URL if needed
-    featured: true
+    description:
+      "A tenant and room management dashboard for dormitory administrators. Handles occupancy tracking, billing records, and maintenance requests through a clean, responsive React interface.",
+    tags: [
+      { label: "React",             category: "technical" },
+      { label: "Vite",              category: "technical" },
+      { label: "Git/GitHub",        category: "technical" },
+      { label: "UI/UX Prototyping", category: "creative"  },
+      { label: "Figma",             category: "creative"  },
+    ],
+    link: "https://github.com/angelbenitezayado47",
+    type: "github",
   },
   {
-    id: 2,
-    title: "Commercial Property Leasing Hub",
-    description: "A commercial leasing application managing real estate property tracking and automated deployment configurations.",
-    category: "GitHub",
-    tags: ["React", "Git", "Cloud Deployment"],
-    link: "https://github.com/user050507280221/Commercial-Property-Leasing-Hub",
-    featured: true
+    title: "Canva Graphic Design Portfolio",
+    description:
+      "A curated collection of professional visual materials created for school events, community campaigns, and tournament promotions — including posters, banners, social media layouts, and brand identity assets.",
+    tags: [
+      { label: "Canva",          category: "creative" },
+      { label: "Graphic Design", category: "creative" },
+      { label: "Brand Identity", category: "creative" },
+      { label: "Visual Layouts", category: "creative" },
+    ],
+    link: "#",
+    type: "design",
   },
-  {
-    id: 3,
-    title: "GCR Campus Event Brand Assets",
-    description: "Complete visual identity layouts, digital assets, and promotional materials designed for major campus events and student programming.",
-    category: "Canva",
-    tags: ["Graphic Designer", "Branding", "Canva Layouts"],
-    link: "https://www.canva.com/your-design-link", // Replace with your Canva share link or portfolio view link
-    featured: true
-  },
-  {
-    id: 4,
-    title: "Land of Dawn - MLBB Tournament Graphics",
-    description: "Gaming tournament branding concept featuring customized hero assets and marketing materials for the College of Computer Studies.",
-    category: "Canva",
-    tags: ["Canva", "Poster Design", "Gaming Identity"],
-    link: "https://www.canva.com/your-design-link", // Replace with your Canva link
-    featured: false
-  },
-  {
-    id: 5,
-    title: "Research Colloquium Opening Visuals",
-    description: "Designed screen background themes and main stage digital backdrops engineered for the 2026 Capstone Project Research Colloquium.",
-    category: "Canva",
-    tags: ["Visual Design", "Event Production", "Presentation"],
-    link: "https://www.canva.com/your-design-link", // Replace with your Canva link
-    featured: false
-  }
 ];
 
 export const references = [

@@ -1,0 +1,54 @@
+.custom-cursor__dot,
+.custom-cursor__ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.custom-cursor__dot {
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.custom-cursor__ring {
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border: 1.5px solid var(--border-accent);
+  transition: width 0.25s var(--transition), height 0.25s var(--transition),
+    margin 0.25s var(--transition), border-color 0.25s, background 0.25s;
+}
+
+.custom-cursor__ring--hover {
+  width: 56px;
+  height: 56px;
+  margin: -28px 0 0 -28px;
+  background: var(--accent-glow);
+  border-color: var(--accent);
+}
+
+/* Hide the native cursor only while CustomCursor is mounted on a fine-pointer device */
+body.cursor-none {
+  cursor: none;
+}
+
+body.cursor-none a,
+body.cursor-none button,
+body.cursor-none input,
+body.cursor-none textarea {
+  cursor: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor__dot,
+  .custom-cursor__ring {
+    display: none;
+  }
+}

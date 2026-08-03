@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { personal, stats } from '../data/resume';
 import './Hero.css';
+import idImage from '../assets/ID.png';
 
 const roles = ["IT Student Assistant", "Graphic Designer", "Quick Learner", "Tech Support"];
 
@@ -105,18 +106,18 @@ export default function Hero() {
           <div className="hero__avatar-ring hero__avatar-ring--inner" />
           <div className="hero__avatar-wrapper animate-float">
             {/* Direct profile image delivery linked straight from your GitHub asset hub */}
-            <img 
-             src="/src/assets/ID.png" 
-              alt="Angel Benitez" 
-              className="hero__avatar-img" 
-              style={{ 
-                width: '100%', 
-                height: '100%', 
-                objectFit: 'cover', 
-                borderRadius: '50%',
-                display: 'block'
-              }} 
-            />
+          <img 
+            src="ID.png" // 👑 No slashes, no 'src/', no 'public/'. Just the direct filename!
+            alt="Angel Benitez" 
+            className="hero__avatar-img" 
+            style={{ 
+              width: '100%', 
+              height: '100%', 
+              objectFit: 'cover', 
+              borderRadius: '50%',
+              display: 'block'
+            }} 
+          />
           </div>
 
           {/* Floating chips */}

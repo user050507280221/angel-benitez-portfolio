@@ -5,13 +5,16 @@
   --bg-card: #12121f;
   --bg-card-hover: #191928;
   --border: rgba(255, 255, 255, 0.07);
-  --border-accent: rgba(108, 99, 255, 0.4);
+  
+  /* 🔋 Swapped violet border glow to emerald green */
+  --border-accent: rgba(0, 224, 142, 0.35);
 
-  --accent: #6c63ff;
-  --accent-bright: #8b85ff;
-  --accent-glow: rgba(108, 99, 255, 0.25);
-  --accent-cyan: #00d4ff;
-  --accent-pink: #ff6b9d;
+  /* 👑 GREEN SHADE RECALIBRATION */
+  --accent: #00e08e;          /* Core emerald/neon green accent */
+  --accent-bright: #33ffb2;   /* Brighter mint green for hover/highlights */
+  --accent-glow: rgba(0, 224, 142, 0.22); /* Soft green drop-shadow aura */
+  --accent-cyan: #00d4ff;     /* Kept cyan for your gradient titles */
+  --accent-pink: #ff6b9d;     /* Kept pink for secondary accents/chips */
 
   --text-primary: #f0f0ff;
   --text-secondary: #9090b8;
